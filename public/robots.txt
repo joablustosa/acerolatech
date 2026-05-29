@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://acerolatech.com.br/sitemap.xml
