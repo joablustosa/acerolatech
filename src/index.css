@@ -380,6 +380,180 @@
       align-items: start;
     }
   }
+
+  .showcase-carousel {
+    width: 100%;
+    background-color: var(--color-ms-surface);
+    border-bottom: 1px solid var(--color-ms-border);
+    overflow: hidden;
+  }
+
+  .showcase-carousel-inner {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .showcase-carousel-inner {
+      padding-top: 3rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  .showcase-carousel-stage {
+    position: relative;
+    min-height: 32rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .showcase-carousel-stage {
+      min-height: 36rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .showcase-carousel-stage {
+      min-height: 40rem;
+    }
+  }
+
+  .showcase-carousel-slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    pointer-events: none;
+  }
+
+  .showcase-carousel-slide.is-active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .showcase-carousel-copy {
+    width: 100%;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .showcase-carousel-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    color: var(--color-ms-ink);
+  }
+
+  .showcase-carousel-desc {
+    margin-top: 0.75rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.5;
+    color: var(--color-ms-muted);
+  }
+
+  .showcase-carousel-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .showcase-carousel-visual {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    max-width: 56rem;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .showcase-carousel-image {
+    max-height: min(52vh, 28rem);
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+    filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.12));
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .showcase-carousel-image {
+      max-height: min(58vh, 32rem);
+    }
+  }
+
+  .showcase-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  .showcase-carousel-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 9999px;
+    border: 1px solid var(--color-ms-border);
+    background-color: var(--color-ms-surface);
+    color: var(--color-ms-subtle);
+    transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+  }
+
+  .showcase-carousel-arrow:hover {
+    border-color: var(--color-acerola);
+    color: var(--color-acerola);
+    background-color: var(--color-acerola-soft);
+  }
+
+  .showcase-carousel-dots {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 20rem;
+  }
+
+  .showcase-carousel-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    border: none;
+    padding: 0;
+    background-color: var(--color-ms-border);
+    transition: background-color 0.2s, transform 0.2s;
+  }
+
+  .showcase-carousel-dot:hover {
+    background-color: var(--color-ms-muted);
+  }
+
+  .showcase-carousel-dot.is-active {
+    background-color: var(--color-acerola);
+    transform: scale(1.15);
+  }
 }
 
 @layer utilities {
@@ -420,6 +594,10 @@
     .animate-fade-up-delay-3 {
       animation: none;
       opacity: 1;
+    }
+
+    .showcase-carousel-slide {
+      transition: none;
     }
   }
 }

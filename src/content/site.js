@@ -290,6 +290,7 @@ export const faqs = [
 ]
 
 export const homeAnchors = [
+  { id: 'showcase', label: 'Showcase' },
   { id: 'servicos', label: 'Serviços' },
   { id: 'como-funciona', label: 'Como funciona' },
   { id: 'por-que-digital', label: 'Por que digital' },

@@ -16,6 +16,7 @@ import Mockup from '../components/ui/Mockup'
 import Section, { SectionHeader } from '../components/ui/Section'
 import { ServiceCard, HighlightCard } from '../components/ui/Card'
 import SubNav from '../components/layout/SubNav'
+import ShowcaseCarousel from '../components/ui/ShowcaseCarousel'
 
 export default function Home() {
   const [activeMockup, setActiveMockup] = useState(capabilities[0]?.mockup ?? 'dashboard')
@@ -55,6 +56,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ShowcaseCarousel />
 
       <SubNav />
 

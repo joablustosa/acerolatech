@@ -4,6 +4,7 @@ import PageHero from '../components/ui/PageHero'
 import Section, { SectionHeader } from '../components/ui/Section'
 import ShowcaseCard from '../components/ui/ShowcaseCard'
 import Modal from '../components/ui/Modal'
+import ShowcaseDetail from '../components/ui/ShowcaseDetail'
 import Button from '../components/ui/Button'
 
 export default function Showcase() {
@@ -47,35 +48,7 @@ export default function Showcase() {
       </Section>
 
       <Modal open={!!selected} onClose={() => setSelected(null)} title={selected?.name ?? ''}>
-        {selected && (
-          <div className="space-y-5">
-            <div className="flex flex-wrap items-center gap-4">
-              <img
-                src={selected.logo}
-                alt={`Logo ${selected.name}`}
-                className="h-12 w-12 object-contain"
-              />
-              {selected.url && (
-                <a
-                  href={selected.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-semibold text-ms-blue hover:underline"
-                >
-                  {selected.url.replace(/^https?:\/\//, '')}
-                </a>
-              )}
-            </div>
-            <div className="overflow-hidden rounded-xl border border-ms-border bg-ms-tint">
-              <img
-                src={selected.preview}
-                alt={`Interface do ${selected.name}`}
-                className="w-full object-cover object-top"
-              />
-            </div>
-            <p className="text-base leading-relaxed text-ms-muted">{selected.description}</p>
-          </div>
-        )}
+        <ShowcaseDetail item={selected} />
       </Modal>
     </>
   )
