@@ -8,6 +8,7 @@ import Metodologia from './pages/Metodologia'
 import Sobre from './pages/Sobre'
 import Showcase from './pages/Showcase'
 import Monitriip from './pages/Monitriip'
+import Contato from './pages/Contato'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
