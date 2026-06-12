@@ -16,6 +16,7 @@ import Mockup from '../components/ui/Mockup'
 import Section, { SectionHeader } from '../components/ui/Section'
 import { ServiceCard, HighlightCard } from '../components/ui/Card'
 import SubNav from '../components/layout/SubNav'
+import MonitriipSpotlight from '../components/ui/MonitriipSpotlight'
 import ShowcaseCarousel from '../components/ui/ShowcaseCarousel'
 
 export default function Home() {
@@ -56,6 +57,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <MonitriipSpotlight />
 
       <ShowcaseCarousel />
 

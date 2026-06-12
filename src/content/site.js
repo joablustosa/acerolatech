@@ -23,6 +23,7 @@ export const whatsappDefaultMessage =
 export const navLinks = [
   { to: '/', label: 'Início' },
   { to: '/servicos', label: 'Serviços' },
+  { to: '/monitriip', label: 'Monitriip' },
   { to: '/metodologia', label: 'Metodologia' },
   { to: '/showcase', label: 'Showcase' },
   { to: '/sobre', label: 'Sobre' },
@@ -197,6 +198,7 @@ export const aboutHighlights = [
 
 export const footerLinks = [
   { to: '/servicos', label: 'Serviços' },
+  { to: '/monitriip', label: 'Monitriip' },
   { to: '/metodologia', label: 'Metodologia' },
   { to: '/showcase', label: 'Showcase' },
   { to: '/sobre', label: 'Sobre' },
@@ -290,6 +292,7 @@ export const faqs = [
 ]
 
 export const homeAnchors = [
+  { id: 'monitriip', label: 'Monitriip' },
   { id: 'showcase', label: 'Showcase' },
   { id: 'servicos', label: 'Serviços' },
   { id: 'como-funciona', label: 'Como funciona' },

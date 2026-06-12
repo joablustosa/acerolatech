@@ -43,6 +43,12 @@ const pages = {
       'Metodologia com diagnóstico, escopo fechado, sprints e entrega mensurável. Como conduzimos a digitalização e a modernização tecnológica de empresas com previsibilidade.',
     keywords: `${globalKeywords}, metodologia ágil, projeto fechado, escopo definido, entrega digital`,
   },
+  '/monitriip': {
+    title: 'Monitriip — Níveis de Implantação Digital | Acerola Tech',
+    description:
+      'Evolua do Nível 4, 3 ou 2 para o Nível 1 de implantação digital. Diagnóstico, IA, integração e desenvolvimento para melhorar indicadores de desempenho da sua empresa.',
+    keywords: `${globalKeywords}, Monitriip, níveis de implantação, maturidade digital, assessment operacional, indicadores de desempenho, evolução digital`,
+  },
   '/showcase': {
     title: 'Showcase — Produtos e Sistemas Desenvolvidos | Acerola Tech',
     description:
@@ -173,6 +179,7 @@ function breadcrumbSchema(path) {
     '/': 'Início',
     '/servicos': 'Serviços',
     '/metodologia': 'Metodologia',
+    '/monitriip': 'Monitriip',
     '/showcase': 'Showcase',
     '/sobre': 'Sobre',
     '/contato': 'Contato',
@@ -220,6 +227,7 @@ export function getJsonLd(pathname) {
 export const sitemapRoutes = [
   { path: '/', priority: '1.0', changefreq: 'weekly' },
   { path: '/servicos', priority: '0.9', changefreq: 'monthly' },
+  { path: '/monitriip', priority: '1.0', changefreq: 'weekly' },
   { path: '/metodologia', priority: '0.8', changefreq: 'monthly' },
   { path: '/showcase', priority: '0.8', changefreq: 'monthly' },
   { path: '/sobre', priority: '0.7', changefreq: 'monthly' },

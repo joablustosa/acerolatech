@@ -554,6 +554,359 @@
     background-color: var(--color-acerola);
     transform: scale(1.15);
   }
+
+  .monitriip-badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    border: 1px solid rgba(225, 29, 46, 0.25);
+    background-color: var(--color-acerola-soft);
+    padding: 0.375rem 0.875rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-acerola);
+  }
+
+  .monitriip-spotlight {
+    width: 100%;
+    background: linear-gradient(135deg, #1b1b1f 0%, #2a1218 45%, #1b1b1f 100%);
+    color: white;
+    overflow: hidden;
+  }
+
+  .monitriip-spotlight-inner {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    .monitriip-spotlight-inner {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  .monitriip-spotlight-grid {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .monitriip-spotlight-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+    }
+  }
+
+  .monitriip-spotlight-title {
+    margin-top: 0.75rem;
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    color: white;
+  }
+
+  .monitriip-spotlight-desc {
+    margin-top: 1rem;
+    max-width: 34rem;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .monitriip-spotlight-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+  }
+
+  .monitriip-levels-preview {
+    width: 100%;
+  }
+
+  .monitriip-levels-path {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 1024px) {
+    .monitriip-levels-path {
+      margin-right: 0;
+    }
+  }
+
+  .monitriip-level-chip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.75rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.75rem 1rem;
+  }
+
+  .monitriip-level-chip.level-4 { border-left: 3px solid #9ca3af; }
+  .monitriip-level-chip.level-3 { border-left: 3px solid #f59e0b; }
+  .monitriip-level-chip.level-2 { border-left: 3px solid #fb923c; }
+
+  .monitriip-level-chip.level-1.is-target {
+    border: 1px solid rgba(225, 29, 46, 0.45);
+    border-left: 4px solid var(--color-acerola);
+    background: linear-gradient(135deg, rgba(225, 29, 46, 0.18) 0%, rgba(255, 255, 255, 0.06) 100%);
+    padding: 1rem 1.125rem;
+  }
+
+  .monitriip-level-num {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .monitriip-level-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .monitriip-level-chip.is-target .monitriip-level-label {
+    color: #ffb3bc;
+  }
+
+  .monitriip-level-summary {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .monitriip-level-arrow {
+    display: flex;
+    justify-content: center;
+    color: var(--color-acerola);
+    opacity: 0.85;
+  }
+
+  .monitriip-hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(180deg, var(--color-ms-surface) 0%, var(--color-ms-bg) 100%);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .monitriip-hero {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .monitriip-hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 48rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .monitriip-stat {
+    border-radius: 12px;
+    border: 1px solid var(--color-ms-border);
+    background: var(--color-ms-surface);
+    padding: 1.25rem 1rem;
+    text-align: center;
+    box-shadow: var(--shadow-ms-subtle);
+  }
+
+  .monitriip-stat-value {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-acerola);
+    letter-spacing: -0.02em;
+  }
+
+  .monitriip-stat-label {
+    margin-top: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-ms-muted);
+  }
+
+  .monitriip-level-card {
+    border-radius: 16px;
+    border: 1px solid var(--color-ms-border);
+    background: var(--color-ms-surface);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-ms-subtle);
+  }
+
+  .monitriip-level-card.is-featured {
+    border-color: rgba(225, 29, 46, 0.35);
+    background: linear-gradient(135deg, #fff 0%, #fff5f6 100%);
+    box-shadow: var(--shadow-ms-card);
+  }
+
+  .monitriip-level-card.level-4 { border-top: 3px solid #9ca3af; }
+  .monitriip-level-card.level-3 { border-top: 3px solid #f59e0b; }
+  .monitriip-level-card.level-2 { border-top: 3px solid #fb923c; }
+  .monitriip-level-card.level-1 { border-top: 3px solid var(--color-acerola); }
+
+  .monitriip-level-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .monitriip-level-card-num {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--color-acerola);
+  }
+
+  .monitriip-level-card-status {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-ms-muted);
+  }
+
+  .monitriip-level-card.is-featured .monitriip-level-card-status {
+    color: var(--color-acerola);
+  }
+
+  .monitriip-level-card-title {
+    margin-top: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-ms-ink);
+  }
+
+  .monitriip-level-card-summary {
+    margin-top: 0.625rem;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-ms-muted);
+  }
+
+  .monitriip-level-card-traits {
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--color-ms-subtle);
+  }
+
+  .monitriip-level-card-traits li {
+    position: relative;
+    padding-left: 1.125rem;
+  }
+
+  .monitriip-level-card-traits li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 9999px;
+    background: var(--color-acerola);
+    opacity: 0.7;
+  }
+
+  .monitriip-level-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .monitriip-level-tag {
+    border-radius: 9999px;
+    background: var(--color-ms-tint);
+    padding: 0.25rem 0.625rem;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--color-ms-subtle);
+  }
+
+  .monitriip-level-card.is-featured .monitriip-level-tag {
+    background: var(--color-acerola-soft);
+    color: var(--color-acerola);
+  }
+
+  .monitriip-evolution-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--color-ms-border);
+    background: var(--color-ms-tint);
+    padding: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .monitriip-evolution-banner {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+  }
+
+  .monitriip-pillar-card {
+    border-radius: 16px;
+    border: 1px solid var(--color-ms-border);
+    background: var(--color-ms-surface);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-ms-subtle);
+    transition: box-shadow 0.2s ease;
+  }
+
+  .monitriip-pillar-card:hover {
+    box-shadow: var(--shadow-ms-card);
+  }
+
+  .monitriip-step-card {
+    border-radius: 16px;
+    border: 1px solid var(--color-ms-border);
+    background: var(--color-ms-surface);
+    padding: 1.5rem;
+    height: 100%;
+  }
+
+  .monitriip-cta-panel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #1b1b1f 0%, #3d1018 50%, #1b1b1f 100%);
+    padding: 3rem 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .monitriip-cta-panel {
+      padding: 4rem 2.5rem;
+    }
+  }
 }
 
 @layer utilities {

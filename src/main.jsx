@@ -7,7 +7,7 @@ import Servicos from './pages/Servicos'
 import Metodologia from './pages/Metodologia'
 import Sobre from './pages/Sobre'
 import Showcase from './pages/Showcase'
-import Contato from './pages/Contato'
+import Monitriip from './pages/Monitriip'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route index element={<Home />} />
           <Route path="servicos" element={<Servicos />} />
           <Route path="metodologia" element={<Metodologia />} />
+          <Route path="monitriip" element={<Monitriip />} />
           <Route path="sobre" element={<Sobre />} />
           <Route path="showcase" element={<Showcase />} />
           <Route path="contato" element={<Contato />} />
